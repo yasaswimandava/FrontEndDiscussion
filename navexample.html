@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<head>
+    <h2>
+        My Application
+    </h2>
+    <style>
+        body{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+       
+          ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  border-right:1px solid white  ;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color:brown;
+}
+
+.active {
+  background-color: brown;
+}
+nav ul li a
+{
+    color:white;
+    text-transform: uppercase;
+}
+a:hover.a.active
+{
+    background: none;
+    color: yellow;
+}
+.tab div {
+  display: none;
+}
+
+.tab div:target {
+  display: block;
+}
+.userclass{
+  align-content: center;
+        
+        margin-top: 100px;
+        max-width: 400px;
+        margin:auto;
+        width: 30%; 
+        border: solid;
+        box-sizing: border-box;
+        background-color: azure;
+
+}
+.submit
+{
+  background-color: chartreuse ;
+}
+
+
+        
+
+    </style>
+    </head>
+    <body>
+        <div class="tab">
+            <nav id="nav">
+                <ul>
+                   <li><a href="#home">Home</a></li>   
+                    <li><a href="#name">Name</a></li> 
+                  <li><a href="#email">Email</a></li> 
+                   <li><a href="#password">Password</a></li>
+                  
+                </ul>
+           
+            </nav>
+        
+            <main>
+                <div  id="name" class="userclass">
+                    <table align="left">
+                        <form  method="POST" >
+                          <table align="center">
+                            <tr>
+                              <td>
+                                Enter User ID :
+                              </td>
+                             
+                              <td>
+                                <input type="number" placeholder="id" min="101" max="999" required>
+  
+                              </td>
+                            </tr>
+                            
+                            <tr>
+                              <input type="submit" value="submit" class="submit">
+                            </tr>
+                            
+                               
+
+                          </table>
+                            
+                                </form>
+
+                    </table>
+                   
+                </div>
+                <div id="password" >
+                    <form method="POST">
+                        <label>Enter Password:</label> 
+                               <input type="text" placeholder="enter User password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                                <input type="submit" value="submit">
+                             
+                    </form>
+                </div>
+                <div id="email" >
+                    <form method="POST" >
+                           <label> Email:</label>
+                             <input type="text" placeholder="enter User email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                           <input type="submit" value="submit">
+                          </form>
+                </div>
+                <div id="homepage"class="default page" >
+                    
+    
+                </div>
+              </div>
+            </main>
+         
+ </body>
+
+</html>

@@ -1,0 +1,38 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0px;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+. {
+    box-sizing: border-box;
+}
+:active{
+    outline: none;
+}
+   #container{
+       display: ruby;
+       grid-template-columns: auto;
+   }
+   
+  #nav a{
+      width: 100%;
+      height: 50%;
+      text-align: center;
+      background-color: aqua;
+  }
+  main{
+      display: inline-block;
+      margin: 0px;
+      height: 100%;
+  }
+  .index{
+      display: none;
+      height: 100%;
+      margin: 0px;
+      background-color: blueviolet;
+      padding-left: 20px;
+      padding-top: 30px;
+  }

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <style>
+            html.body{
+                width:100%;
+                height: 100%;
+                margin: 10px;
+                background-color: cyan;
+                
+
+            }
+            ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 4px;
+  padding-right: 30px;
+  overflow: auto;
+  bottom: auto;
+  display: flex;
+  margin-top: auto;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}
+            
+            
+           
+            .resource
+            {
+              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                
+               
+                
+                
+                border: black;
+                
+                
+                box-sizing: inherit;
+                
+
+                
+                
+            }
+            .resource h1{
+                margin: 2px;
+            }
+            .default
+            {
+                display:block;
+            }
+            :target
+            {
+                display:block;
+            }
+            
+      
+
+           
+           
+            
+li {
+  float: right;
+  
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: flexbox;
+  background-color:cyan;
+  
+  color: black;
+  text-align: center;
+  padding: 20px 20px 20px;
+  text-decoration: none;
+  background-position: left;
+  font-size: 20px;
+  display: block;
+  
+}
+nav{
+    background-color:white;
+}
+
+li a:hover:not(.active) {
+  background-color:brown;
+}
+
+
+nav ul li a
+{
+    color:black;
+    text-transform: uppercase;
+}
+.submit
+{
+    background-color:chartreuse;
+
+}
+.tab div.card
+{
+
+    border-color: black;
+
+  
+  width: 600px;
+  height: 300px;
+  height: 100%;
+  left: 20%;
+
+  
+
+
+  border-width: 10%;
+  border-top-width: 10%;
+  align-content: center;
+  box-sizing: border-box;
+  border-style:groove;
+  background-position: top;
+  border-left: 50%;
+  display: none;
+ 
+  
+}
+.inputs
+{
+    bottom: unset;
+    background-size: 20px;
+    box-sizing: content-box;
+    
+
+}
+.tab div:target
+{
+    display:block;
+    height: 200px;
+}
+
+
+
+        </style>
+    </head>
+    <body>
+        <div>
+
+        
+        <div id="usercontainer">
+            <nav id="nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>   
+                    <li><a href="#name">Name</a></li> 
+                  <li><a href="#email">Email</a></li> 
+                   <li><a href="#password">Password</a></li>
+
+                </ul>
+                
+                
+
+            </nav>
+            <main class="tab"> 
+                <div id ="name" align="center" class="card">
+                
+                <div align="center" class="resource">
+                    <h2> Name</h2><br>
+                    <form   >
+                       
+                        <input type="text" id="name" name="name" required placeholder="Enter your name" minlength="5" maxlength="10"class="inputs">
+                        <input type="submit" value="Submit" class="submit"><br>
+                        <br>
+                    </form>
+
+                </div>
+            </div>
+            <div id ="email" class="card">
+                <div align ="center" class="resource" >
+                    <h2> Email </h2><br>
+                    <form >
+                       
+                        <input type="email" id="email" name="email"placeholder="Enter Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required class="inputs">
+                        <input type="submit" value="Submit" class="submit"><br>
+                        <br>
+                    </form>
+
+                </div>
+
+            </div>
+            <div id="password" class="card">
+                <div align ="center" class="resource">
+                    <h2> Password</h2><br>
+                    <form >
+                       
+                        <input type="password" id="password" name="password" placeholder="Enter Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required class="inputs">
+                        <input type="submit" value="Submit" class="submit"><br>
+                        
+                        <br>
+                    </form>
+
+                </div>
+
+            </div>
+                <div id="home" class="card">
+                    <div  align ="centre"class="resource">
+                        <br>
+                        <p>
+                            <h1> Home</h1>
+                        </p>
+                        
+    
+                    </div>
+
+                </div>
+               
+                
+
+            </main>
+
+        </div>
+    </div>
+    </body>
+</html>

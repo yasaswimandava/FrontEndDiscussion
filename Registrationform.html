@@ -1,0 +1,182 @@
+<!doctype html>
+<head >
+  
+<title> My new Form
+</title>
+<style>
+    .container{
+        align-content: center;
+        
+        margin-top: 50px;
+        max-width: 400px;
+        margin:auto;
+        width: 30%; 
+        border: solid;
+        box-sizing: border-box;
+        
+        
+       
+         }
+    
+</style>
+<body>
+    <div class="container" >
+        
+    <form action="Registrationform" method="POST" onsubmit="return alert('are you want to submit')">
+        
+        <table align="center" >
+            <tr align="center">
+                <td colspan="4">
+                     <h3>RegistrationFrom</h3> 
+                 </td>
+            </tr>>
+            <tr>
+                <td>
+                    Title:
+                 </td>
+            <td>
+                <select id="Title">
+                    <option value="mr">Mr</option>
+                    <option value="mrs">Mrs</option>
+                    </select>
+            </td>
+    
+            <tr>
+                <td>
+                    First Name:
+                </td>
+                <td>
+                    <input type="text" name="firstnmae" id="firstnmae" placeholder="Enter your first name" required >
+                </td>
+           
+            <tr>
+                <td>
+                    Last Name:
+                </td>
+                <td>
+                    <input type="text" name="lastname" id="lastname" placeholder="Enter your last name" required>
+                </td>
+
+            </tr>
+
+        
+            <tr>
+                <td>
+                    Mobile Number:
+                </td>
+                <td>
+                    <input type="number" name="mobilelnumber" id="mobilelnumber" placeholder="Entre your mobile number" minlength="10" maxlength="10" required>
+             </td>
+
+            </tr>
+            <tr>
+                <td>
+                    Address:
+                </td>
+                <td>
+                    <input type="text" name="address" id="address" placeholder="Enter your address" required>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    District :
+                </td>
+                <td>
+                    <input type="text" name="district" id="district" placeholder="Enter your district" required>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                   State:
+                </td>
+                <td>
+                    <input type="text" name="state" id="state" placeholder="Enter your state" required>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    Postel Code:
+                </td>
+                <td>
+                    <input type="text" name="postalcode" id="postalcode" replaceholder="Enter your postalcode" minlength="6" maxlength="6" required>
+                </td>
+                <tr>
+                    <td>
+                        Country:
+                    </td>
+                    <td>
+                        <input type="text" name="country" id="country" placeholder="Enter your country" required >
+                    </td>
+
+            </tr>
+            <tr>
+                <td>
+                    E mail:
+                </td>
+                <td>
+                    <input type="text" name="email" id="email" placeholder="Enter your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    Date Of Birth:
+                </td>
+                <td>
+                    <input type="date" name="dob" id="dob" placeholder="Enter your date Of birth" required>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    Gender:
+                </td>
+                <td>
+                    <input type="radio" name="Gender">Male
+                    <input type="radio" name="Gender">Female
+                    <input type="radio"name="Gender">Other
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    Payment:
+                </td>
+                <td>
+                    <input type="radio" name="Payment">NetBanking
+                    <input type="radio" name="Payment">Wallets
+                   
+                </td>
+                <tr>
+                    <td>
+                        Text Area:
+                    </td>
+                    <td>
+                       <textarea rows="" >
+
+                       </textarea>
+                    </td>
+                    <br>
+                    
+                    <tr align="center" >
+
+                        <td colspan="6"><input type="submit" value="Submit Form" /></td>
+                        </tr>
+
+            </tr>
+            
+
+    </table>
+
+
+
+    </form>
+
+</div>
+</body>
+
+
+</head>
